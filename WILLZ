@@ -1,0 +1,86 @@
+import React from 'react';
+import { View, Text, StyleSheet, Button } from 'react-native';
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>W & J Natural Rice Suppliers</Text>
+      <Text style={styles.subtitle}>Quality Rice in Bulk</Text>
+
+      <Text style={styles.text}>
+        Super Rice | Basmati | Pakistan Rice | Local Varieties
+      </Text>
+
+      <Button title="Order Rice" onPress={() => alert("Order Feature Coming Soon")} />
+      <Button title="Call Us" onPress={() => alert("Call 0742 039766")} />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    padding: 20,
+    backgroundColor: '#f4f4f4'
+  },
+  title: {
+    fontSize: 26,
+    fontWeight: 'bold',
+    color: '#2e7d32',
+    textAlign: 'center'
+  },
+  subtitle: {
+    fontSize: 18,
+    textAlign: 'center',
+    marginBottom: 10
+  },
+  text: {
+    textAlign: 'center',
+    marginBottom: 20
+  }
+});
+6. Sample HTML + JavaScript (Web / PWA Version)
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+  <title>W & J Natural Rice Suppliers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial; padding: 20px; background: #f4f4f4; }
+    h1 { color: green; }
+    button { padding: 10px; margin: 5px; width: 100%; }
+  </style>
+</head>
+<body>
+
+<h1>W & J Natural Rice Suppliers</h1>
+<p>Located in Mukono</p>
+
+<h3>Rice Types</h3>
+<ul>
+  <li>Super Rice</li>
+  <li>Basmati Rice</li>
+  <li>Pakistan Rice</li>
+  <li>Local Rice Varieties</li>
+</ul>
+
+<h3>Available Sizes</h3>
+<p>5kg | 10kg | 25kg | 50kg | 100kg</p>
+
+<button onclick="order()">Order Now</button>
+<button onclick="call()">Call 0742 039766</button>
+
+<script>
+function order() {
+  alert("Order request sent. We shall contact you.");
+}
+function call() {
+  window.location.href = "tel:0742039766";
+}
+</script>
+
+</body>
+</html>
